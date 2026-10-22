@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>REGISTRATION PAGE</title>
+
+    <link rel="stylesheet"
+          href="{% static 'css/registeration.css' %}">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <nav class="navbar">
+
+        <div class="navbar-logo">
+            <span>♻</span>
+            Aluminum Recovery
+        </div>
+
+
+        <div class="navbar-links">
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/login/">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         REGISTRATION FORM
+    ========================================== -->
+
+    <div class="form-container">
+
+        <h2>REGISTRATION PAGE</h2>
+
+
+        <form method="POST">
+
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+
+        <p>
+            Already have account?
+
+            <a href="{% url 'login' %}">
+                login here
+            </a>
+        </p>
+
+    </div>
+
+
+</body>
+
+</html>
+

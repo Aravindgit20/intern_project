@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   APP LOADING / ERROR
+========================= */
+
+.loading-screen {
+    min-height: 100vh;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(222, 239, 230, 0.85),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(232, 225, 244, 0.75),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #f8fbfa 0%,
+            #f5f7fb 100%
+        );
+
+    color: #536159;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+}
+
+
+.loading-screen h2 {
+    margin: 0 0 10px;
+
+    color: #27342d;
+
+    font-size: 24px;
+}
+
+
+.loading-screen p {
+    margin: 0;
+
+    color: #738078;
+
+    font-size: 14px;
+}

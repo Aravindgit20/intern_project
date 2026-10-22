@@ -1,0 +1,67 @@
+{
+    "bauxite_high_medium": {
+        "standard_processing": 2.9317,
+        "yield_optimization": 0.0,
+        "waste_reduction": 0.0
+    },
+    "bauxite_medium_high": {
+        "standard_processing": -0.022,
+        "yield_optimization": 0.0,
+        "waste_reduction": 0.0
+    },
+    "bauxite_medium_low": {
+        "standard_processing": 6.6243,
+        "yield_optimization": 0.0,
+        "waste_reduction": 0.0
+    },
+    "bauxite_high_low": {
+        "standard_processing": 4.4648,
+        "yield_optimization": 0.0,
+        "waste_reduction": 0.0
+    },
+    "scrap_aluminum_high_low": {
+        "standard_processing": 4.751,
+        "yield_optimization": 0.0,
+        "waste_reduction": 0.0
+    },
+    "bauxite_high_high": {
+        "standard_processing": 41.8308,
+        "yield_optimization": 0.0,
+        "waste_reduction": 0.0
+    },
+    "scrap_aluminum_medium_low": {
+        "standard_processing": 8.7533,
+        "yield_optimization": 0.0,
+        "waste_reduction": 0.0
+    },
+    "scrap_aluminum_high_medium": {
+        "standard_processing": 1.983,
+        "yield_optimization": 0.0,
+        "waste_reduction": 0.0
+    },
+    "bauxite_medium_unknown": {
+        "standard_processing": 0.625,
+        "yield_optimization": 0.0,
+        "waste_reduction": 1.7202
+    },
+    "scrap_aluminum_medium_unknown": {
+        "standard_processing": 0.0,
+        "yield_optimization": 0.0,
+        "waste_reduction": 2.7682
+    },
+    "bauxite_medium_medium": {
+        "standard_processing": 0.0,
+        "yield_optimization": 0.0,
+        "waste_reduction": 0.0
+    },
+    "bauxite_high_unknown": {
+        "standard_processing": 0.808,
+        "yield_optimization": 0.0,
+        "waste_reduction": 0.0
+    },
+    "scrap_aluminum_high_unknown": {
+        "standard_processing": 0.0,
+        "yield_optimization": 1.078,
+        "waste_reduction": 0.0
+    }
+}

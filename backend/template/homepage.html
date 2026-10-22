@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Aluminum Recovery | Smart Workflow</title>
+
+    <link rel="stylesheet"
+          href="{% static 'css/homepage.css' %}">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<nav class="navbar">
+
+    <div class="navbar-logo">
+        <span>♻</span>
+        Aluminum Recovery
+    </div>
+
+    <div class="navbar-links">
+
+        <a href="/login/">
+            Login
+        </a>
+
+        <a href="/register/">
+            Register
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="hero">
+
+
+    <!-- =====================================
+         LEFT CONTENT
+    ====================================== -->
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            SMART INDUSTRIAL WORKFLOW
+        </p>
+
+
+        <h1>
+
+            Smarter Aluminum Recovery.
+
+            <span>
+                Sustainable Future.
+            </span>
+
+        </h1>
+
+
+        <p class="description">
+
+            A smart workflow system designed to improve
+            aluminum recovery, predict material yield,
+            and support sustainable by-product management.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="/login/"
+               class="primary-btn">
+
+                Get Started →
+
+            </a>
+
+
+            <a href="/register/"
+               class="secondary-btn">
+
+                Create Account
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         RIGHT PROCESS FLOW
+    ====================================== -->
+
+    <div class="process-visual">
+
+
+        <!-- =================================
+             SVG CIRCULAR FLOW
+        ================================== -->
+
+        <svg class="circular-flow"
+             viewBox="0 0 480 440"
+             xmlns="http://www.w3.org/2000/svg">
+
+            <defs>
+
+                <marker id="arrowhead"
+                        markerWidth="14"
+                        markerHeight="14"
+                        refX="10"
+                        refY="7"
+                        orient="auto">
+
+                    <path
+                        d="M 0 0 L 14 7 L 0 14"
+                        fill="#78AAA1">
+                    </path>
+
+                </marker>
+
+            </defs>
+
+
+            <!-- TOP → RIGHT -->
+
+            <path
+                d="M 292 84
+                   C 350 92,
+                     390 125,
+                     400 180"
+                marker-end="url(#arrowhead)">
+            </path>
+
+
+            <!-- RIGHT → BOTTOM -->
+
+            <path
+                d="M 400 260
+                   C 390 315,
+                     350 348,
+                     292 358"
+                marker-end="url(#arrowhead)">
+            </path>
+
+
+            <!-- BOTTOM → LEFT -->
+
+            <path
+                d="M 188 358
+                   C 130 348,
+                     90 315,
+                     80 260"
+                marker-end="url(#arrowhead)">
+            </path>
+
+
+            <!-- LEFT → TOP -->
+
+            <path
+                d="M 80 180
+                   C 90 125,
+                     130 92,
+                     188 84"
+                marker-end="url(#arrowhead)">
+            </path>
+
+        </svg>
+
+
+
+        <!-- =================================
+             CENTER
+        ================================== -->
+
+        <div class="flow-center">
+
+            <div class="center-icon">
+                ♻
+            </div>
+
+            <h3>
+                Smart Recovery
+            </h3>
+
+            <p>
+                Connected Workflow
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================
+             STEP 01
+        ================================== -->
+
+        <div class="process-step step-one">
+
+            <strong>
+                01
+            </strong>
+
+            <span>
+                Raw Material
+            </span>
+
+        </div>
+
+
+
+        <!-- =================================
+             STEP 02
+        ================================== -->
+
+        <div class="process-step step-two">
+
+            <strong>
+                02
+            </strong>
+
+            <span>
+                Yield Prediction
+            </span>
+
+        </div>
+
+
+
+        <!-- =================================
+             STEP 03
+        ================================== -->
+
+        <div class="process-step step-three">
+
+            <strong>
+                03
+            </strong>
+
+            <span>
+                Bayer Process
+            </span>
+
+        </div>
+
+
+
+        <!-- =================================
+             STEP 04
+        ================================== -->
+
+        <div class="process-step step-four">
+
+            <strong>
+                04
+            </strong>
+
+            <span>
+                By-Products
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <p>
+        © 2026 Smart Aluminum Recovery System
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
