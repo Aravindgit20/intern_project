@@ -185,48 +185,12 @@ intern_project/
 - MySQL Server
 - Git
 
-## Local Setup
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/YOUR-USERNAME/smart-aluminum-recovery.git
-cd smart-aluminum-recovery
-```
-
-Replace `YOUR-USERNAME` with your GitHub username.
-
-### 2. Configure the MySQL database
-
-Create a MySQL database named `intern_db`, or update the database name to match your configuration.
-
-Configure Django to connect to MySQL using environment variables or another secure configuration method. Do not commit database passwords or secret keys to GitHub.
-
-### 3. Set up the Django backend
-
-```bash
-cd backend
-python -m venv venv
-```
-
 Activate the virtual environment.
 
 **Windows PowerShell:**
 
 ```powershell
 .\venv\Scripts\Activate.ps1
-```
-
-Install the dependencies:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-Apply database migrations:
-
-```bash
-python manage.py migrate
 ```
 
 Start the development server:
