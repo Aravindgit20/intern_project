@@ -12,24 +12,32 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
 from pathlib import Path
-
+import os
+from pathlib import Path
+from dotenv import load_dotenv
 
 # =========================================================
 # BASE DIRECTORY
 # =========================================================
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+load_dotenv(BASE_DIR / ".env")
 
 # =========================================================
 # SECURITY
 # =========================================================
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "")
 
-SECRET_KEY = 'django-insecure-5*(vf1y5wdj$4=%r3=yb6w@en7e9i#3wbc(f^=5r_77#zto=)f'
+DEBUG = os.getenv("DJANGO_DEBUG", "True").lower() == "true"
 
-DEBUG = True
-
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    host.strip()
+    for host in os.getenv(
+        "DJANGO_ALLOWED_HOSTS",
+        "localhost,127.0.0.1"
+    ).split(",")
+    if host.strip()
+]
 
 
 # =========================================================
@@ -145,15 +153,13 @@ WSGI_APPLICATION = 'intern_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-
-        'NAME': 'intern_db',
-
-        'USER': 'root',
-
-        'PASSWORD': 'Mydatabase123',
+        'NAME': os.getenv('DB_NAME', 'intern_db'),
+        'USER': os.getenv('DB_USER', 'root'),
+        'PASSWORD': os.getenv('DB_PASSWORD', ''),
+        'HOST': os.getenv('DB_HOST', '127.0.0.1'),
+        'PORT': os.getenv('DB_PORT', '3306'),
     }
 }
-
 
 # =========================================================
 # PASSWORD VALIDATION
