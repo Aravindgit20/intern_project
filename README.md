@@ -235,18 +235,4 @@ Start the development server:
 python manage.py runserver
 ```
 
-### 4. Set up the React frontend
-
-Open another terminal at the repository root:
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-## Deployment
-
-The application is organized as a React frontend and a Django backend connected to MySQL. Deployment requires hosting the frontend, backend, and database, then configuring their production URLs and environment variables.
- sustainability outcomes.
 
