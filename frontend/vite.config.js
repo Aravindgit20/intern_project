@@ -1,14 +1,19 @@
+
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
+const isGitHubPages = process.env.GITHUB_PAGES === 'true'
+
 export default defineConfig({
     plugins: [react()],
 
-    base: '/static/react/',
+    base: isGitHubPages ? '/intern_project/' : '/static/react/',
 
     build: {
-        outDir: path.resolve(__dirname, '../backend/static/react'),
+        outDir: isGitHubPages
+            ? path.resolve(__dirname, 'dist')
+            : path.resolve(__dirname, '../backend/static/react'),
         emptyOutDir: true,
     },
 })
